@@ -2,12 +2,15 @@
 
 class Technology:
     #Initializing the data attributes
+    #The __init_method accepts arguments for the 
+    #item, serial number, needs_servicing and room_location. 
     def __init__(self,item,serial_number,needs_servicing,room_location):
         self.__item = item
         self.__serial_number = serial_number
         self.__needs_servicing = needs_servicing
         self.__room_location = room_location
-        
+    
+    #The following methods are mutators for the data attributes
     def set_item(self,item):
         self.__item = item
         
@@ -19,6 +22,9 @@ class Technology:
 
     def set_room_location(self,room_location):
         self.__room_location = room_location
+        
+    #The following methods are accessors for the 
+    #data attributes
     def get_item(self):
         return self.__item
 
